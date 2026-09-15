@@ -1,13 +1,19 @@
 body{
     background-color: #e0e8ff;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: repeat-x;
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-size: 16px;
 }
 
 .ilustracao {
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px; 
 }
+
 
 .bloco {
     background-color: #ffffff;
@@ -16,10 +22,20 @@ body{
     margin-right: auto;
     text-align: center;
     border-radius: 20px;
+    margin-top: 5%;
 }
 
 .bloco-menor {
-    background-color: #cdcfd8;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.desc, .imagem, .cancelar {
+    display: inline-block;
+    line-height: 10px;
 }
 
 #descricao {
@@ -44,4 +60,14 @@ button {
     box-shadow: black ;
     font-size: 18px;
     height: 50px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.cancel {
+    text-decoration: none;
+    color: #8d94a6;
 }

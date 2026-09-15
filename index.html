@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Card de Resumo do Pedido</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <main>
 
     <div class="bloco">
-      <img class="ilustracao" src="/images/illustration-hero.svg" alt="">
-      <h1>Order Summary</h1>
-      <p id="descricao">You can now listen to million of songs, audiobooks, and podcasts on any device anywhere you like</p>
+      <img class="ilustracao" src="./images/illustration-hero.svg" alt="">
+      <div class="all-content">
+        <h1>Order Summary</h1>
+        <p id="descricao">You can now listen to million of songs, audiobooks, and podcasts on any device anywhere you
+          like
+        </p>
 
-      <div class="bloco-menor">
-        <img src="/images/icon-music.svg" alt="">
-        <p>Annual Plan</p>
-        <p style="color: #8d94a6;">$59.99/year</p>
-        <a href="">Change</a>
-      </div>
+        <div class="bloco-menor">
+          <div class="imagem">
+            <img src="./images/icon-music.svg" alt="" style="margin-top: 30px;">
+          </div>
+          <div class="desc">
+            <p>Annual Plan</p>
+            <p style="color: #8d94a6;">$59.99/year</p>
+          </div>
+          <div class="cancelar">
+              <a href="">Change</a>
+          </div>
 
-      <div class="botoes">
-        <button id="button-payment">Proceed to Payment</button>
-        <button id="cancel">Cancel Order</button>
+        </div>
+
+        <div class="botoes">
+          <button id="button-payment">Proceed to Payment</button>
+          <p style="padding-bottom: 20px;">
+            <a href="index.html" class="cancel">Cancel Order</a>
+          </p>
+          
+        </div>
       </div>
-      
     </div>
-
   </main>
-
 </body>
 </html>
